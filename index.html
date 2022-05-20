@@ -17,38 +17,38 @@
 
   <body>
     <div class="weather-container">
-      <div class="weather-app">
-        <form class="search-form" id="search-form">
-          <div class="row">
-            <div class="col-6">
-              <input
-                type="search"
-                placeholder="Type your city here"
-                autofocus="on"
-                autocomplete="off"
-                id="city-input"
-                class="form-control shadow-sm"
-              />
-            </div>
-            <div class="col-3">
-              <input
-                type="submit"
-                value="search"
-                class="form-control btn btn-success"
-              />
-            </div>
-            <div class="col-2">
-              <button
-                type="submit"
-                class="btn btn-dark"
-                id="current-location-button"
-              >
-                📍
-              </button>
-            </div>
+      <form class="search-form" id="search-form">
+        <div class="row">
+          <div class="col-6">
+            <input
+              type="search"
+              placeholder="Type your city here"
+              autofocus="on"
+              autocomplete="off"
+              id="city-input"
+              class="form-control shadow-sm"
+            />
           </div>
-        </form>
-        <img src="media/panda.svg" alt="panda" class="panda-image" />
+          <div class="col-3">
+            <input
+              type="submit"
+              value="search"
+              class="form-control btn btn-success"
+            />
+          </div>
+          <div class="col-2">
+            <button
+              type="submit"
+              class="btn btn-dark"
+              id="current-location-button"
+            >
+              📍
+            </button>
+          </div>
+        </div>
+      </form>
+      <img src="media/panda.svg" alt="panda" class="panda-image" />
+      <section class="units">
         <h1 id="city">Vancouver,BC</h1>
         <h2 id="temperature"></h2>
 
@@ -57,43 +57,46 @@
           <li>Wind: <span id="wind"></span>km/h</li>
           <li id="description">Scattered Showers</li>
         </ul>
+      </section>
 
-        <section class="dates">
-          <p class="time">Today is</p>
-        </section>
+      <section class="dates">
+        <p class="time">Today is</p>
+      </section>
 
-              <div class="days">
-              <div class="row">
-                <div class="col">
-                  <h5>Mon🌧️</h5>
-                  <p class="temp-highs"> 18°/8°C 
-                </div>
-                <div class="col">
-                  <h5>Tues🌧️ </h5>
-                  <p class="temp-highs">17°/9°C
-                </div>
-                <div class="col">
-                  <h5>Wed🌧️</h5>
-                  <p class="temp-highs">17°/10°C
-                </div>
-                <div class="col">
-                  <h5>Thurs🌥️</h5>
-                  <p class="temp-highs">19°/10°C
-                </div>
-                <div class="col">
-                  <h5>Fri☁️</h5>
-                  <p class="temp-highs">16°/9°C
-                </div>
-               </div>
+      <div class="days">
+        <div class="row">
+          <div class="col">
+            <h4>Mon🌧️</h4>
+            <p class="temp-highs">18°/8°C</p>
+          </div>
 
-       
+          <div class="col">
+            <h4>Tues🌧️</h4>
+            <p class="temp-highs">17°/9°C</p>
+          </div>
+
+          <div class="col">
+            <h4>Wed🌧️</h4>
+            <p class="temp-highs">17°/10°C</p>
+          </div>
+
+          <div class="col">
+            <h4>Thurs🌥️</h4>
+            <p class="temp-highs">19°/10°C</p>
+          </div>
+
+          <div class="col">
+            <h4>Fri☁️</h4>
+            <p class="temp-highs">16°/9°C</p>
+          </div>
+        </div>
       </div>
+      <small>
+        <a href="https://github.com/AllyB101/PlusProject"
+          >Github Plus Project Link</a
+        ></small
+      >
     </div>
-    <small>
-      <a href="https://github.com/AllyB101/PlusProject"
-        >Github Plus Project Link</a
-      ></small
-    >
     <script src="src/script.js"></script>
   </body>
 </html>

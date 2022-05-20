@@ -18,23 +18,45 @@ h2 {
   text-align: center;
 }
 
-h5 {
+h4 {
+  color: #3fcf13;
   padding-top: 30px;
   text-shadow: 1px 8px 9px rgba(29, 57, 29, 0.6);
   text-align: center;
 }
 
+.weather-app {
+  margin: 0 auto;
+  max-width: 700px;
+  max-height: 700px;
+}
+
 .weather-container {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/034/763/original/bamboo-1.jpg.jpg?1653069434);
+  background-size: auto;
   margin: 20px auto;
   padding: 20px;
   width: 700px;
-  height: 800px;
-  background: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
-  border-radius: 1%;
+  height: 700px;
+}
+
+.units {
+  margin: 0 auto;
+  background: radial-gradient(
+    788px at 0.7% 3.4%,
+    rgb(164, 231, 192) 0%,
+    rgb(255, 255, 255) 90%
+  );
+
+  max-width: 400px;
+  max-height: 200px;
+  border-color: #3fcf13;
+  border-radius: 20px;
 }
 
 .dates {
-  padding-bottom: -20px;
+  padding-top: 30px;
+
   text-align: center;
 }
 
@@ -50,13 +72,14 @@ h5 {
 }
 
 .temp-highs {
-  color: black;
-  font-size: 15px;
+  color: mediumaquamarine;
+  font-size: 20px;
   text-align: center;
 }
 
 .panda-image {
   padding-top: 30px;
+  padding-right: 20px;
   margin: 0 auto;
   display: block;
   width: 250px;
@@ -67,4 +90,8 @@ h5 {
 .weather {
   list-style-type: none;
   text-align: center;
+}
+
+.days {
+  padding-top: 50px;
 }
