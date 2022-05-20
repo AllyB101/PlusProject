@@ -19,7 +19,7 @@ h2 {
 }
 
 h4 {
-  color: #3fcf13;
+  color: #255317;
   padding-top: 30px;
   text-shadow: 1px 8px 9px rgba(29, 57, 29, 0.6);
   text-align: center;
@@ -36,11 +36,13 @@ h4 {
   background-size: auto;
   margin: 20px auto;
   padding: 20px;
-  width: 700px;
+  width: 600px;
   height: 700px;
+  border-radius: 40px;
 }
 
 .units {
+  display: block;
   margin: 0 auto;
   background: radial-gradient(
     788px at 0.7% 3.4%,
@@ -72,14 +74,14 @@ h4 {
 }
 
 .temp-highs {
-  color: mediumaquamarine;
+  color: darkgreen;
   font-size: 20px;
   text-align: center;
 }
 
-.panda-image {
-  padding-top: 30px;
-  padding-right: 20px;
+.weather-image {
+  padding-top: 40px;
+  padding-bottom: 20px;
   margin: 0 auto;
   display: block;
   width: 250px;
