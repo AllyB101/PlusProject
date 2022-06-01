@@ -5,7 +5,7 @@ body {
 
 h1 {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 10px;
   background: #3fcf13;
   background: linear-gradient(to right, #3fcf13 0%, #7affa2 50%, #5bcfb0 100%);
   -webkit-background-clip: text;
@@ -32,8 +32,7 @@ h4 {
 }
 
 .weather-container {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/034/763/original/bamboo-1.jpg.jpg?1653069434);
-  background-size: auto;
+  background-color: azure;
   margin: 20px auto;
   padding: 20px;
   width: 600px;
@@ -41,19 +40,22 @@ h4 {
   border-radius: 40px;
 }
 
-.units {
+.temperature {
+  text-align: center;
+  display: block;
+}
+
+.conversion-units {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: none;
+}
+
+.icon {
+  text-align: center;
   display: block;
   margin: 0 auto;
-  background: radial-gradient(
-    788px at 0.7% 3.4%,
-    rgb(164, 231, 192) 0%,
-    rgb(255, 255, 255) 90%
-  );
-
-  max-width: 400px;
-  max-height: 200px;
-  border-color: #3fcf13;
-  border-radius: 20px;
 }
 
 .dates {
@@ -96,4 +98,8 @@ h4 {
 
 .days {
   padding-top: 50px;
+}
+
+.git-link {
+  text-align: center;
 }

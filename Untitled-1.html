@@ -1,3 +1,46 @@
+
+              <div class="days">
+              <div class="row">
+                <div class="col">
+                  <p class="weekday">Mon🌧️</p>
+                  <p class="high"> 18°/8°C 
+                </div>
+                <div class="col">
+                  <p class="weekday">Tues🌧️ </p>
+                  <p class="high">17°/9°C
+                </div>
+                <div class="col">
+                  <p class="weekday">Wed🌧️
+                  <p class="high">17°/10°C
+                </div>
+                <div class="col">
+                  <p class="weekday">Thurs🌥️</p>
+                  <p class="high">19°/10°C
+                </div>
+                <div class="col">
+                  <p class="weekday">Fri☁️</p>
+                  <p class="high">16°/9°C
+                </div>
+               </div>
+
+
+
+                 background: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  border-radius: 1%;
+
+  <div class="weather-app"></div>
+
+
+
+   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/954/original/pexels-pixabay-355844.jpg?1654046371);
+  background-size: 800px;
+}
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -47,21 +90,17 @@
           </div>
         </div>
       </form>
-     <img src=""
-           alt="cloudy"
-           id="icon"
-           />
-           
-
+      <img
+        src="media/weather.svg"
+        alt="weather-forecast"
+        class="weather-image"
+      />
       <section class="units">
         <h1 id="city"> Vancouver</h1>
-        <div>
-        <span class="temperature" id="temperature">°20</span>
-       <span class="conversion-units">
+       <span class="temperature" id="temperature">°20</span>
+       <span class="units">
             <a href="#" class="units"id="celsius-link">°C</a> |
             <a href="#" class="units"id="fahrenheit-link">°F</a>
-            </span>
-            </div>
 
         <ul class="weather">
           <li>Humidity: <span id="humidity"></span>%</li>
@@ -112,3 +151,28 @@
     <script src="src/script.js"></script>
   </body>
 </html>
+
+
+
+.units {
+  display: block;
+  margin: 0 auto;
+  background: radial-gradient(
+    788px at 0.7% 3.4%,
+    rgb(164, 231, 192) 0%,
+    rgb(255, 255, 255) 90%
+  );
+
+
+
+     <span class="temperature" id="temperature">°20</span>
+
+     function displayFarenheitTemperature(event) {
+  event.preventDefault();
+  let fahrenheitTemperature = (14 * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = fahrenheitTemperature;
+}
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
