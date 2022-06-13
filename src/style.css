@@ -1,12 +1,13 @@
 body {
-  font-family: "Times New Roman", Times, serif;
-  background: #010400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/036/759/original/pexels-veeterzy-39811.jpg?1654826746");
+  background-size: 1500px;
+  display: block;
 }
 
 h1 {
   text-align: center;
   padding-top: 10px;
-  background: #3fcf13;
   background: linear-gradient(to right, #3fcf13 0%, #7affa2 50%, #5bcfb0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -19,30 +20,26 @@ h2 {
 }
 
 h4 {
-  color: #255317;
+  color: black;
   padding-top: 30px;
   text-shadow: 1px 8px 9px rgba(29, 57, 29, 0.6);
   text-align: center;
 }
 
-.weather-app {
+.weather-card {
   margin: 0 auto;
+  display: block;
   max-width: 700px;
-  max-height: 700px;
-}
+  height: 800px;
 
-.weather-container {
-  background-color: azure;
-  margin: 20px auto;
-  padding: 20px;
-  width: 600px;
-  height: 700px;
-  border-radius: 40px;
+  background-color: #63d471;
+  background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
 }
 
 .temperature {
-  text-align: center;
+  margin: 0 auto;
   display: block;
+  text-align: center;
 }
 
 .conversion-units {
@@ -60,7 +57,6 @@ img {
 
 .dates {
   padding-top: 30px;
-
   text-align: center;
 }
 
@@ -70,33 +66,24 @@ img {
   max-width: 360px;
   text-shadow: 5px 5px 10px rgba(13, 156, 114, 0.4);
   color: black;
-  font-size: 20px;
+  font-size: 15px;
   border: 10px groove rgba(93, 241, 155, 0.7);
   border-radius: 50px;
 }
 
 .temp-highs {
-  color: darkgreen;
+  color: black;
   font-size: 20px;
   text-align: center;
 }
 
-.weather-image {
-  padding-top: 40px;
-  padding-bottom: 20px;
-  margin: 0 auto;
-  display: block;
-  width: 250px;
-  height: 100px;
-  text-align: center;
-}
-
 .weather {
+  color: #010400;
   list-style-type: none;
   text-align: center;
 }
 
-.days {
+.weather-forecast {
   padding-top: 50px;
 }
 

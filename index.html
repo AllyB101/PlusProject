@@ -12,10 +12,11 @@
       crossorigin="anonymous"
     />
     <link href="src/style.css" rel="stylesheet" type="text/css" />
-    <title>Weather App Plus Week 5</title>
+    <title>Weather App Plus Week 8</title>
   </head>
 
   <body>
+    <section class="weather-card">
     <div class="weather-container">
       <form class="search-form" id="search-form">
         <div class="row">
@@ -48,35 +49,30 @@
         </div>
       </form>
 
-      <h5> Fixing styling Wednesday </h5>
-     
+    
+    
       <img src=""
            alt="cloudy"
            id="icon"
           />
       
-      <section class="units">
+        
         <h1 id="city"> Vancouver</h1>
         <div>
-        <span class="temperature" id="temperature">°20</span>
-       <span class="conversion-units">
-            <a href="#" class="units"id="celsius-link">°C</a> |
-            <a href="#" class="units"id="fahrenheit-link">°F</a>
-            </span>
-            </div>
-
-        <ul class="weather">
-          <li>Humidity: <span id="humidity"></span>%</li>
+          <ul class="weather">
+        <span class="temperature" id="temperature">°20 </span>
+     
+         <li>Humidity: <span id="humidity"></span>%</li>
           <li>Wind: <span id="wind"></span>km/h</li>
           <li id="description">Scattered Showers</li>
         </ul>
-      </section>
+    
 
       <section class="dates">
         <p class="time">Today is</p>
       </section>
 
-      <div class="days">
+      <div class="weather-forecast" id="forecast">
         <div class="row">
           <div class="col">
             <h4>Mon🌧️</h4>
@@ -98,6 +94,7 @@
             <p class="temp-highs">19°/10°C</p>
           </div>
 
+
           <div class="col">
             <h4>Fri☁️</h4>
             <p class="temp-highs">16°/9°C</p>
@@ -105,11 +102,14 @@
         </div>
       </div>
 
+   
+
       <article class="git-link">
         <a href="https://github.com/AllyB101/PlusProject"
           >AllyB Git Link</Link></a
         >
       </article>
+       </section>
     </div>
     <script src="src/script.js"></script>
   </body>
