@@ -22,10 +22,8 @@ if (minutes < 10) {
   minutes = `0${minutes}`;
 }
 
-
-
-let time = document.querySelector(".time");
-time.innerHTML = `Today is ${day} at ${hours}:${minutes}`;
+let date = document.querySelector(".date");
+date.innerHTML = `Today is ${day} at ${hours}:${minutes}`;
 
 function displayWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
@@ -45,35 +43,7 @@ function displayWeather(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
-} 
-
-// weather forecast
-
-function formatDay(timestamp) {
-  let date = new Date(timestamp * 1000);
-  let day = date.getDay();
-  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-
-  return days[day];
 }
-
-
-function displayForecast(response) {
-  let forecast = response.data.daily;
-
-  let forecastElement = document.querySelector("#forecast");
-
-  let forecastHTML = `<div class="row">`;
-  forecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
-
-      forecastHTML =
-        forecastHTML +
-        `
-        
-        `
-
-
 
 function searchCity(city) {
   let apiKey = "e379888fed53187908795edbfaac2344";
