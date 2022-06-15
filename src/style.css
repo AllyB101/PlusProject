@@ -24,15 +24,18 @@ h2 {
   display: block;
   max-width: 700px;
   height: 800px;
+  border-radius: 20px;
 
   background-color: #63d471;
   background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
 }
 
 .temperature {
+  color: #63d471;
+  font-weight: bold;
   margin: 0 auto;
   display: block;
-  text-align: center;
+  text-align: left;
 }
 
 img {
@@ -49,7 +52,7 @@ img {
 .time-display {
   margin: auto;
   text-align: center;
-  max-width: 360px;
+  max-width: 300px;
   text-shadow: 5px 5px 10px rgba(13, 156, 114, 0.4);
   color: black;
   font-size: 15px;
@@ -58,9 +61,9 @@ img {
 }
 
 .weather {
-  color: #010400;
+  color: #7affa2;
   list-style-type: none;
-  text-align: center;
+  text-align: left;
 }
 
 .weather-forecast {
@@ -69,11 +72,33 @@ img {
   padding: 0%;
   display: block;
   padding-top: 50px;
+  color: #7affa2;
 }
 
-.weather-forecast-date {
-}
-
-.git-link {
+button {
+  display: block;
+  margin: 0 auto;
   text-align: center;
+  background: radial-gradient(
+    862px at 6% 18%,
+    rgb(21, 219, 149) 9.4%,
+    rgb(26, 35, 160) 83.6%
+  );
+  border-radius: 5px;
+  width: 130px;
+}
+
+a {
+  color: black;
+  text-align: center;
+  text-shadow: 5px 5px 10px rgba(13, 156, 114, 0.4);
+}
+
+a:hover {
+  color: darkcyan;
+}
+
+article {
+  text-align: center;
+  font-weight: lighter;
 }
